@@ -12,7 +12,7 @@ openestimate init-db
 openestimate serve
 ```
 
-Opens at **http://localhost:8080** with SQLite — zero configuration needed.
+Opens at **http://localhost:8081** with SQLite — zero configuration needed.
 
 Demo login: `demo@openestimator.io` / `DemoPass1234!`
 

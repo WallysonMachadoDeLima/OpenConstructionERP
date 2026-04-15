@@ -6,10 +6,10 @@
 # This starts:
 #   - PostgreSQL 16 (data persisted in Docker volume)
 #   - Backend (FastAPI, serves API + frontend)
-#   - Accessible at http://localhost:8080
+#   - Accessible at http://localhost:8081
 #
 # For evaluation with SQLite (no PostgreSQL):
-#   docker run -d -p 8080:8080 -v oe_data:/data openestimate
+#   docker run -d -p 8081:8080 -v oe_data:/data openestimate
 #   (Build first: docker build -t openestimate -f deploy/docker/Dockerfile.unified .)
 
 services:
@@ -39,7 +39,7 @@ services:
       postgres:
         condition: service_healthy
     ports:
-      - "8080:8080"
+      - "8081:8080"
     environment:
       # Override SQLite default with PostgreSQL
       DATABASE_URL: postgresql+asyncpg://oe:oe-quickstart-2024@postgres:5432/openestimate
@@ -48,7 +48,7 @@ services:
       JWT_SECRET: oe-quickstart-change-me-in-production
       # Frontend serving
       SERVE_FRONTEND: "true"
-      ALLOWED_ORIGINS: "http://localhost:8080,http://localhost"
+      ALLOWED_ORIGINS: "http://localhost:8081,http://localhost"
       # Defaults
       APP_ENV: development
       APP_DEBUG: "false"

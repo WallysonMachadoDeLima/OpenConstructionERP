@@ -361,7 +361,7 @@ curl -sSL https://raw.githubusercontent.com/datadrivenconstruction/OpenConstruct
 irm https://raw.githubusercontent.com/datadrivenconstruction/OpenConstructionERP/main/scripts/install.ps1 | iex
 ```
 
-Auto-detects Docker / Python / uv → installs and runs at **http://localhost:8080**
+Auto-detects Docker / Python / uv → installs and runs at **http://localhost:8081**
 
 ### Option 1: Docker (recommended)
 
@@ -371,7 +371,7 @@ cd OpenConstructionERP
 make quickstart
 ```
 
-Open **http://localhost:8080** — builds everything in ~2 minutes.
+Open **http://localhost:8081** — builds everything in ~2 minutes.
 
 ### Option 2: Local Development (no Docker)
 
@@ -400,7 +400,7 @@ pip install openconstructionerp
 openconstructionerp serve --open
 ```
 
-One command installs everything. Opens browser at **http://localhost:8080** with full UI. Uses SQLite — zero config. [PyPI package](https://pypi.org/project/openconstructionerp/) (2.6 MB, includes pre-built frontend).
+One command installs everything. Opens browser at **http://localhost:8081** with full UI. Uses SQLite — zero config. [PyPI package](https://pypi.org/project/openconstructionerp/) (2.6 MB, includes pre-built frontend).
 
 ### Demo Accounts
 

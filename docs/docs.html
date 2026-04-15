@@ -234,7 +234,7 @@ document.querySelectorAll('.sidebar a').forEach(a=>{
 <p>After installing OpenConstructionERP, follow these steps to set up your first project and create your first cost estimate. The entire process takes about 10 minutes.</p>
 
 <h3 id="fs-login">Step 1: Log In</h3>
-<p>Open your browser and navigate to <code>http://localhost:5173</code> (local development) or <code>http://localhost:8080</code> (Docker). You will see the login page with a "Demo Access" panel. Click on <strong>Admin</strong> to log in instantly with the demo account, or enter your own credentials if you registered a new account.</p>
+<p>Open your browser and navigate to <code>http://localhost:5173</code> (local development) or <code>http://localhost:8081</code> (Docker). You will see the login page with a "Demo Access" panel. Click on <strong>Admin</strong> to log in instantly with the demo account, or enter your own credentials if you registered a new account.</p>
 
 <h3 id="fs-onboarding">Step 2: Complete Onboarding</h3>
 <p>On first login, the onboarding wizard guides you through initial setup:</p>
@@ -274,9 +274,9 @@ document.querySelectorAll('.sidebar a').forEach(a=>{
 curl -sSL https://raw.githubusercontent.com/datadrivenconstruction/OpenConstructionERP/main/scripts/install.sh | bash
 
 # Windows (PowerShell)
-irm https://raw.githubusercontent.com/datadrivenconstruction/OpenConstructionERP/main/scripts/install.ps1 | iex</code></pre><p>Auto-detects Docker / Python / uv and runs at <code>http://localhost:8080</code></p><h3 id="install-docker">Option B: Docker</h3><pre><code>git clone https://github.com/datadrivenconstruction/OpenConstructionERP.git
+irm https://raw.githubusercontent.com/datadrivenconstruction/OpenConstructionERP/main/scripts/install.ps1 | iex</code></pre><p>Auto-detects Docker / Python / uv and runs at <code>http://localhost:8081</code></p><h3 id="install-docker">Option B: Docker</h3><pre><code>git clone https://github.com/datadrivenconstruction/OpenConstructionERP.git
 cd OpenConstructionERP
-make quickstart</code></pre><p>Opens at <code>http://localhost:8080</code> (~2 min first build).</p><h3 id="install-local">Option C: Local Development</h3><pre><code>git clone https://github.com/datadrivenconstruction/OpenConstructionERP.git
+make quickstart</code></pre><p>Opens at <code>http://localhost:8081</code> (~2 min first build).</p><h3 id="install-local">Option C: Local Development</h3><pre><code>git clone https://github.com/datadrivenconstruction/OpenConstructionERP.git
 cd OpenConstructionERP
 
 # Backend (SQLite, zero config)

@@ -75,7 +75,7 @@ resource "digitalocean_droplet" "openestimate" {
     # Start services
     docker compose up -d
 
-    echo "OpenEstimate installed at $(hostname -I | awk '{print $1}'):8080"
+    echo "OpenEstimate installed at $(hostname -I | awk '{print $1}'):8081"
   CLOUDINIT
 
   tags = ["openestimate"]
@@ -128,6 +128,6 @@ output "ip_address" {
 }
 
 output "url" {
-  value       = "http://${digitalocean_droplet.openestimate.ipv4_address}:8080"
+  value       = "http://${digitalocean_droplet.openestimate.ipv4_address}:8081"
   description = "OpenEstimate URL"
 }

@@ -821,7 +821,7 @@ def main() -> None:
             "    openestimate init-db\n"
             "    openestimate serve\n"
             "\n"
-            "Then open http://localhost:8080 — log in with demo@openestimator.io / DemoPass1234!"
+            "Then open http://localhost:8081 — log in with demo@openestimator.io / DemoPass1234!"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )

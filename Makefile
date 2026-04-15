@@ -14,7 +14,7 @@ help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 	@echo ""
-	@echo "  Quick start: make quickstart → http://localhost:8080"
+	@echo "  Quick start: make quickstart → http://localhost:8081"
 	@echo "  Local dev:   make setup && make dev → http://localhost:5173"
 	@echo ""
 

@@ -13,7 +13,7 @@ projects_section = '''</section>
 <p>After installing OpenConstructionERP, follow these steps to set up your first project and create your first cost estimate. The entire process takes about 10 minutes.</p>
 
 <h3 id="fs-login">Step 1: Log In</h3>
-<p>Open your browser and navigate to <code>http://localhost:5173</code> (local development) or <code>http://localhost:8080</code> (Docker). You will see the login page with a "Demo Access" panel. Click on <strong>Admin</strong> to log in instantly with the demo account, or enter your own credentials if you registered a new account.</p>
+<p>Open your browser and navigate to <code>http://localhost:5173</code> (local development) or <code>http://localhost:8081</code> (Docker). You will see the login page with a "Demo Access" panel. Click on <strong>Admin</strong> to log in instantly with the demo account, or enter your own credentials if you registered a new account.</p>
 
 <h3 id="fs-onboarding">Step 2: Complete Onboarding</h3>
 <p>On first login, the onboarding wizard guides you through initial setup:</p>

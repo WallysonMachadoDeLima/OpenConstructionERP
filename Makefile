@@ -115,6 +115,13 @@ setup: ## First-time setup: install backend + frontend dependencies
 quickstart: ## Start OpenEstimate (PostgreSQL + App) — zero config
 	$(DOCKER_COMPOSE) -f docker-compose.quickstart.yml up --build
 
+quickstart-d: ## Start OpenEstimate in background (detached)
+	$(DOCKER_COMPOSE) -f docker-compose.quickstart.yml up --build -d
+
+up: quickstart-d ## Alias: start OpenEstimate in background
+
+down: quickstart-down ## Alias: stop OpenEstimate
+
 quickstart-down: ## Stop quickstart
 	$(DOCKER_COMPOSE) -f docker-compose.quickstart.yml down
 

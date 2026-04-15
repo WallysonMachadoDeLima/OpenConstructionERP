@@ -9,7 +9,7 @@ Usage::
 
     # 1. Configure S3 credentials in your .env (or as env vars)
     #    STORAGE_BACKEND=s3
-    #    S3_ENDPOINT=http://localhost:9000      (or AWS/B2/DO endpoint)
+    #    S3_ENDPOINT=http://localhost:9002      (or AWS/B2/DO endpoint)
     #    S3_ACCESS_KEY=...
     #    S3_SECRET_KEY=...
     #    S3_BUCKET=openestimate

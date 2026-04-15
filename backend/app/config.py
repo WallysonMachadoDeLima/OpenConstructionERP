@@ -60,7 +60,7 @@ class Settings(BaseSettings):
     # bucket instead of the local filesystem.  The S3 credentials below
     # are only consulted when ``storage_backend="s3"``.
     storage_backend: Literal["local", "s3"] = "local"
-    s3_endpoint: str = "http://localhost:9000"
+    s3_endpoint: str = "http://localhost:9002"
     s3_access_key: str = ""
     s3_secret_key: str = ""
     s3_bucket: str = "openestimate"

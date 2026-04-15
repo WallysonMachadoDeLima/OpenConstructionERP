@@ -602,7 +602,7 @@ DATABASE_SYNC_URL=postgresql://oe:oe@localhost:5432/openestimate
 REDIS_URL=redis://localhost:6379/0
 
 # MinIO / S3
-S3_ENDPOINT=http://localhost:9000
+S3_ENDPOINT=http://localhost:9002
 S3_ACCESS_KEY=minioadmin
 S3_SECRET_KEY=minioadmin
 S3_BUCKET=openestimate
